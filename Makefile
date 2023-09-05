@@ -9,4 +9,4 @@ format:
 	black *.py
 
 test:
-	python -m pytest test_stack.py
+	nosetests --with-spec --spec-color --with-coverage
