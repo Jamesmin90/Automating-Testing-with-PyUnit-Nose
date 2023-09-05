@@ -9,4 +9,4 @@ format:
 	black *.py
 
 test:
-	python -m pytest -vv --cov=test_stack.py
+	python -m pytest test_stack.py
