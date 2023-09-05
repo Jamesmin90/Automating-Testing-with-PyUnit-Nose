@@ -3,3 +3,4 @@ nose
 pinocchio
 coverage
 pylint
+pytest
