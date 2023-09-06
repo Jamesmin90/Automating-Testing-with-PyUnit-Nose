@@ -1,26 +1,29 @@
-"""Implements a Stack data structure"""
-from typing import Any
+from unittest import TestCase
+from stack import Stack
 
+class TestStack(TestCase):
+    """Test cases for Stack"""
 
-class Stack:
-    """Implements a Stack data structure"""
+    def setUp(self):
+        """Setup before each test"""
+        self.stack = Stack()
 
-    def __init__(self):
-        """Constructor"""
-        self.items = [] 
-    
-    def push(self, data: Any) -> None: 
-        """Places an item onto the stack"""
-        self.items.append(data) 
-    
-    def pop(self) -> Any:
-        """Removes an item from the stack and returns it"""
-        return self.items.pop() 
-        
-    def peek(self) -> Any:
-        """Returns the item at the top of the stack without removing it"""
-        return self.items[-1] 
-        
-    def is_empty(self) -> bool:
-        """Returns True if the stack is empty, otherwise returns False"""
-        return len(self.items) == 0
+    def tearDown(self):
+        """Tear down after each test"""
+        self.stack = None
+
+    def test_push(self):
+        """Test pushing an item into the stack"""
+        raise Exception("not implemented")
+
+    def test_pop(self):
+        """Test popping an item of off the stack"""
+        raise Exception("not implemented")
+
+    def test_peek(self):
+        """Test peeking at the top the stack"""
+        raise Exception("not implemented")
+
+    def test_is_empty(self):
+        """Test if the stack is empty"""
+        raise Exception("not implemented")
