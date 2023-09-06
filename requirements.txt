@@ -4,3 +4,4 @@ pinocchio
 coverage
 pylint
 pytest
+black
